@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wheres-harry/static/css/main.78489c30.css",
+    "main.js": "/wheres-harry/static/js/main.e7bb087b.js",
+    "static/js/787.4ce2c4d5.chunk.js": "/wheres-harry/static/js/787.4ce2c4d5.chunk.js",
+    "index.html": "/wheres-harry/index.html",
+    "main.78489c30.css.map": "/wheres-harry/static/css/main.78489c30.css.map",
+    "main.e7bb087b.js.map": "/wheres-harry/static/js/main.e7bb087b.js.map",
+    "787.4ce2c4d5.chunk.js.map": "/wheres-harry/static/js/787.4ce2c4d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78489c30.css",
+    "static/js/main.e7bb087b.js"
+  ]
+}
