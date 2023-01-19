@@ -1,38 +1,91 @@
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* could break the coordinates captured in game */
+.img-main-game {
+  width: 1000px;
+  max-height: 700px;
+  object-fit: cover
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  color: rgb(36, 34, 34);
+  text-shadow: 2px 2px rgb(101, 197, 229);
+  font-size: 3rem;
+}
+
+@media (max-width: 450px) {
+  .App {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
+
+  /* scoreboard on mobile is somehow left of gameimg */
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .current-player-scoreboard {
+    flex-direction: row
+  }
+
+  .game-chars {
+    flex-direction: row;
+    height: 30vh;
+  }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.game-chars {
+  text-align: left;
+  padding-left: 2rem;
+  width: 250px;
+  font: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-char-found {
+  color: rgb(4, 169, 54);
+  font-weight: bold;
+}
+
+.game-chars li {
+  padding: 5px 0;
+}
+
+.img-container {
+  position: relative
+}
+
+.game-msg {
+  height: 50px;
+  width: 60%;
+  font-size: 2rem;
+  font-style: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 1px rgb(61, 62, 63);
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.current-player-scoreboard {
+  gap: 100px;
+}
+
+.current-player-scoreboard p {
+  width: 200px;
+  gap: 0;
 }
